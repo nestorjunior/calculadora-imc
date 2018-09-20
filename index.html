@@ -22,7 +22,19 @@
           
           <h1 class="text-center"><i class="fas fa-weight"></i> Calcular IMC</h1>
 
+          <input type="text" name="altura" id="altura">
+          <br><br>
+
+          <input type="text" name="peso" id="peso">
+          <br><br>
           
+
+          <button>Calcular IMC</button>
+          <br><br>
+
+          <div id="resultado"></div>
+
+          <!-- 
           <div class="input-group input-group-lg" id="altura">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-lg">Altura (1,70m)</span>
@@ -37,15 +49,15 @@
             <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
           </div>
           
-          <button type="button" class="btn btn-primary btn-lg" id="botao-calcular">Calcular</button>
+          <button type="button" class="btn btn-primary btn-lg" id="botao-calcular">Calcular</button> -->
 
-
+<!-- 
           <div class="input-group input-group-lg" id="resultado">
-            <!-- <div class="input-group-prepend">
+            <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-lg">Resultado</span>
             </div>
-            <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"> -->
-          </div>
+            <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"> 
+          </div>-->
 
         </div>
       </div>
@@ -56,27 +68,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <script>
-      $(function(){
-
-        $('button').bind('click', function() {
-            
-          var altura = $('#altura').val();
-          var peso = $('#peso').val();
-
-          var altura = altura.replace(',', '.');
-          var peso = peso.replace(',', '.');
-
-      
-          var imc = peso / (altura*altura);
-
-          $('#resultado').html('Seu resultado é: ' + imc + 'Kg');
-
-        });
-        
-      })
-    </script>
-
+    <script src="script.js"></script>
   </body>
 </html>
